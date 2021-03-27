@@ -4,15 +4,15 @@
 #include <WiFiClientSecure.h>
 #include "cert.h"
 
-const char * ssid = "home_wifi";
-const char * password = "helloworld";
+const char * ssid = "House of R&D1";
+const char * password = "12345HouseofR&D1";
 
 
 String FirmwareVer = {
-  "2.2"
+  "2.3"
 };
-#define URL_fw_Version "https://raw.githubusercontent.com/programmer131/ESP8266_ESP32_SelfUpdate/master/esp32_ota/bin_version.txt"
-#define URL_fw_Bin "https://raw.githubusercontent.com/programmer131/ESP8266_ESP32_SelfUpdate/master/esp32_ota/fw.bin"
+#define URL_fw_Version "https://raw.githubusercontent.com/jahidulislamrahat97/Automatic-Firmware-Updater/blob/main/esp32_ota/bin_version.txt"
+#define URL_fw_Bin "https://raw.githubusercontent.com/jahidulislamrahat97/Automatic-Firmware-Updater/blob/main/esp32_ota/fw.bin"
 
 //#define URL_fw_Version "http://cade-make.000webhostapp.com/version.txt"
 //#define URL_fw_Bin "http://cade-make.000webhostapp.com/firmware.bin"
