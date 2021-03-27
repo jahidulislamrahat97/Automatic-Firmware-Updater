@@ -9,7 +9,7 @@ const char * password = "12345HouseofR&D1";
 
 
 String FirmwareVer = {
-  "2.3"
+  "1.6"
 };
 #define URL_fw_Version "https://raw.githubusercontent.com/jahidulislamrahat97/Automatic-Firmware-Updater/blob/main/esp32_ota/bin_version.txt"
 #define URL_fw_Bin "https://raw.githubusercontent.com/jahidulislamrahat97/Automatic-Firmware-Updater/blob/main/esp32_ota/fw.bin"
