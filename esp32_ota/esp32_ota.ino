@@ -4,14 +4,18 @@
 #include <WiFiClientSecure.h>
 #include "cert.h"
 
-#define URL_fw_Version "https://raw.githubusercontent.com/jahidulislamrahat97/Automatic-Firmware-Updater/main/esp32_ota/bin_version.txt"
-#define URL_fw_Bin "https://raw.githubusercontent.com/jahidulislamrahat97/Automatic-Firmware-Updater/main/esp32_ota/fw.bin"
+//#define URL_fw_Version "https://raw.githubusercontent.com/jahidulislamrahat97/Automatic-Firmware-Updater/main/esp32_ota/bin_version.txt"
+//#define URL_fw_Bin "https://raw.githubusercontent.com/jahidulislamrahat97/Automatic-Firmware-Updater/main/esp32_ota/fw.bin"
+
+#define URL_fw_Version "https://raw.githubusercontent.com/jahidulislamrahat97/chip-version-updater-xyz/main/def/bin_version.txt"
+#define URL_fw_Bin "https://raw.githubusercontent.com/jahidulislamrahat97/chip-version-updater-xyz/main/def/fw.bin"
 
 
-const char * ssid = "House of R&D1";
-const char * password = "12345HouseofR&D1";
+const char * ssid = "ANTT Robotics TP";
+const char * password = "digi@anti@123";
 
 
+//Firmware Current Version
 String FirmwareVer = {
   "1.9"
 };
@@ -28,7 +32,6 @@ const long mini_interval = 1000;
 int num = 0;
 
 void repeatedCall() {
-
   if (WiFi.status() == WL_CONNECTED) {
     Serial.println("wifi connected");
     if (FirmwareVersionCheck()) {
